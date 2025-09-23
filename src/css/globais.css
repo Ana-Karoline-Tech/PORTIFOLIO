@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+html {
+    font-size: 62.5%;
+    font-family: 'Courier New', monospace !important;
+    color: var(--cor-branca);
+    font-weight: 300;
+    scroll-behavior: smooth;
+  }
+
+  /* Container principal do navbar - Versão Portfólio Cyberpunk */
+.cyberpunk-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(30, 41, 59, 0.92) 25%,
+    rgba(15, 23, 42, 0.95) 50%,
+    rgba(30, 41, 59, 0.92) 75%,
+    rgba(15, 23, 42, 0.95) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 2px solid;
+  border-image: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(6, 182, 212, 0.6) 25%, 
+    rgba(0, 217, 255, 0.8) 50%, 
+    rgba(6, 182, 212, 0.6) 75%, 
+    transparent 100%) 1;
+  padding: 16px 30px;
+  z-index: 1001;
+  box-shadow:
+    0 4px 30px rgba(6, 182, 212, 0.2),
+    0 8px 60px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(6, 182, 212, 0.2);
+  animation: navbarGlow 5s ease-in-out infinite;
+}
+
+/* Logo/Nome à esquerda */
+.navbar-logo {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 4.5rem;
+  background: linear-gradient(90deg, #06b6d4, #0ea5e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 8px rgba(6, 182, 212, 0.4);
+}
+/* Efeito de destaque no logo */
+.navbar-logo:hover {
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.6), 0 0 30px rgba(6, 182, 212, 0.4);
+}
+
+.navbar-logo span {
+  font-size: 2.5rem;
+  color: #06b6d4, #0ea5e9;
+  font-weight: 950;
+}
+
+/* Itens de navegação à direita */
+.navbar-links {
+  display: flex;
+  gap: 30PX;
+}
+
+.navbar-link {
+  position: relative;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+}
+
+.navbar-link:hover {
+  color: #06b6d4;
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.7);
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, #0ea5e9);
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* Botão de contato destacado */
+.navbar-cta {
+  background: linear-gradient(90deg, #06b6d4, #0ea5e9);
+  color: #0f172a !important;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+}
+
+.navbar-cta:hover {
+  animation: pulse 1.5s infinite;
+}
+
+/* Animações */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(6, 182, 212, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
+}
+
+@keyframes navbarGlow {
+  0%, 100% { box-shadow: 0 4px 30px rgba(6, 182, 212, 0.2); }
+  50% { box-shadow: 0 4px 40px rgba(6, 182, 212, 0.4); }
+}
+
+
+
+
+.img-box {
+  position: relative;
+  width: 300px; /* Ajuste conforme necessário */
+  height: 500px; /* Ajuste conforme necessário */
+}
+
+.img-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Se quiser manter o círculo */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.img-box img.active {
+  opacity: 1;
+}
+
+
+/* rever até aqui */
+  
+  body {
+    background-color: var(--cor-fundo-cinza-escuro);
+    font-family: var(--fonte-primaria);
+    font-size: var(--fonte-normal);
+  }
+
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .alinhar-itens-no-centro {
+    align-items: center;
+  }
+
+  .redes-sociais a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--cor-branca);
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .redes-sociais a i {
+    line-height: 40px;
+  }
+  
+  .redes-sociais a:hover {
+    color: var(--cor-primaria);
+  }
+  
+  .outer-shadow {
+    box-shadow: 3px 3px #222327, -3px -3px 3px #454545;
+  }
+  
+  .inner-shadow {
+    box-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #454545;
+  }
+
+  .section{
+    padding: 7rem 0 7rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 60px 0;
+  }
+  
+  .section-title h2 {
+    font-size: var(--fonte-gigante);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .botao {
+    font-size: var(--fonte-grande);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    background-color: var(--cor-primaria);
+  }
+  
+  .botao:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+  }

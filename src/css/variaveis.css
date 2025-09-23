@@ -1,0 +1,25 @@
+:root {
+    /* --cor-primaria: #43bd8e; */
+    --cor-primaria: #eb0ac2;
+    --cor-secundaria: rgba(0, 217, 255, 0.8);    
+    /* --cor-secundaria: #FD6C22;     */
+    --cor-branca: #ffffff;
+    --cor-fundo-escuro: #cc119a;    
+    /* --cor-fundo-escuro: #040203;     */
+    --cor-fundo-cinza-escuro: #160645;
+    /* --cor-fundo-cinza-escuro: #282828; */
+    --cor-fundo-cinza-claro: #1b055a;    
+  }
+    
+  :root {
+    --fonte-primaria: 'Courier New', monospace;
+    --fonte-secundaria: 'Raleway', sans serif;
+    --fonte-gigante: 4.5rem;
+    --fonte-extra-grande: 3rem;
+    --fonte-grande: 2.4rem;
+    --fonte-normal: 1.6rem;
+  }
+  
+  :root {
+    --mobile-padding: 30px;
+  }
