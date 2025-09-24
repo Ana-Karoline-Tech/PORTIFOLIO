@@ -1,5 +1,6 @@
 .home .full-screen {
-    padding: 200px 0;
+    padding: 195px 0;
+    padding-left: 50px;
     min-height: 86vh;
 }
 
@@ -29,15 +30,11 @@
 
 
 .img-box {
-  /* Mantenha TODAS as propriedades atuais do seu código */
-  /* Adicione apenas estas linhas: */
   animation: 
     borderGlow 6s infinite alternate;
 }
 
 .img-box02 {
-  /* Mantenha TODAS as propriedades atuais do seu código */
-  /* Adicione apenas estas linhas: */
   animation: 
     borderGlow 6s infinite alternate;
 }
@@ -46,25 +43,25 @@
   0% {
     box-shadow: 
       0 0 0 4px #0f172a, /* Borda preta interna (fixa) */
-      0 0 0 8px #FF00FF,  /* Rosa neon */
-      0 0 20px #FF00FF;   /* Brilho */
+      0 0 0 8px #FF00FF,  
+      0 0 20px #FF00FF;   
   }
   33% {
     box-shadow: 
       0 0 0 4px #0f172a,
-      0 0 0 8px #00FFFF,  /* Ciano */
+      0 0 0 8px #00FFFF,  
       0 0 20px #00FFFF;
   }
   66% {
     box-shadow: 
       0 0 0 4px #0f172a,
-      0 0 0 8px #FFFF00,  /* Amarelo neon */
+      0 0 0 8px #FFFF00,  
       0 0 20px #FFFF00;
   }
   100% {
     box-shadow: 
       0 0 0 4px #0f172a,
-      0 0 0 8px #FF00FF,  /* Volta ao rosa */
+      0 0 0 8px #FF00FF,  
       0 0 20px #FF00FF;
   }
 }
