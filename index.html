@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="src/css/globais.css" />
   <link rel="stylesheet" href="src/css/variaveis.css" />
   <link rel="stylesheet" href="src/css/secoes/header.css" />
+  <link rel="stylesheet" href="src/css/secoes/apresentacao.css" />
   <link rel="stylesheet" href="src/css/secoes/home.css" />
   <link rel="stylesheet" href="src/css/secoes/sobre.css" />
   <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
@@ -39,34 +40,50 @@
 
   <section class="home">
     <div class="container">
-      <div class="row full-screen alinhar-itens-no-centro">
-        <div class="texto-home">
-          <p>Olá 🖖,</p>
-          <h1>Sou a Ana Karoline</h1>
-          <p>💻Transformo linhas de código em soluções inovadoras. <br> 🤖Apaixonada por tecnologia e resolução de problemas. <br> 💖Construindo pontes digitais com programação.🖥️</p>
-          <p>Vamos criar algo incrível juntos?</p>
-          <h2>Desenvolvedora Frontend</h2>
-
-          <div class="redes-sociais">
-            <a href="https://www.linkedin.com/in/ana-karoline-silva-ribeiro" target="_blank" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://wa.me/5511999999999" target="_blank" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://github.com/Ana-Karoline-Tech" target="_blank" class="outer-shadow"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/SeuUsuario" target="_blank" class="outer-shadow"><i class="fab fa-instagram"></i></a>
-          </div>
+        <div class="row full-screen alinhar-itens-no-centro">
+            <div class="home-content">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="btn close"></div>
+                            <div class="btn minimize"></div>
+                            <div class="btn maximize"></div>
+                        </div>
+                        <div class="terminal-title">desenvolvedora_frontend.js</div>
+                    </div>
+                    <div class="prompt">user@Ana-Karoline-Tech:~$</div>
+                    <div class="typing-text" id="typingText">
+                        <span class="cursor" id="cursor"></span>
+                    </div>
+                </div>
+                <div class="redes-sociais">
+                    <a href="https://www.linkedin.com/in/ana-karoline-silva-ribeiro" target="_blank" class="outer-shadow">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="outer-shadow">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/Ana-Karoline-Tech" target="_blank" class="outer-shadow">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/SeuUsuario" target="_blank" class="outer-shadow">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="img-home">
+                <div class="img-box inner-shadow">
+                    <img class="outer-shadow" src="src/imagens/quem-sou-eu/eu-github-maior.png" alt="foto do perfil da Ana" />
+                    <img src="src/imagens/quem-sou-eu/euuu-giyhub-pequeno.png" alt="Foto sobre mim 2" class="outer-shadow">
+                    <img src="src/imagens/quem-sou-eu/eu-pensando-github-menor.png" alt="Foto sobre mim 2" class="outer-shadow">
+                    <img src="src/imagens/quem-sou-eu/eu-pensando.png" alt="Foto sobre mim 2" class="outer-shadow">
+                    <img src="src/imagens/quem-sou-eu/euuu-giyhub-pequeno.png" alt="Foto sobre mim 2" class="outer-shadow">
+                </div>
+            </div>
         </div>
-
-        <div class="img-home">
-          <div class="img-box inner-shadow">
-            <img class="outer-shadow" src="src/imagens/quem-sou-eu/eu-github-maior.png" alt="foto do perfil da Ana" />
-            <img src="src/imagens/quem-sou-eu/euuu-giyhub-pequeno.png" alt="Foto sobre mim 2" class="outer-shadow">
-            <img src="src/imagens/quem-sou-eu/eu-pensando-github-menor.png" alt="Foto sobre mim 2" class="outer-shadow">
-            <img src="src/imagens/quem-sou-eu/eu-pensando.png" alt="Foto sobre mim 2" class="outer-shadow">
-            <img src="src/imagens/quem-sou-eu/euuu-giyhub-pequeno.png" alt="Foto sobre mim 2" class="outer-shadow">
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
   <section class="sobre-mim section" id="sobre-mim">
     <div class="container">
       <div class="row">
@@ -198,7 +215,7 @@
         </div>
 
         <div class="projeto">
-          <a href="https://github.com" target="_blank">
+          <a href="https://ana-karoline-tech.github.io/food-landingPage/" target="_blank">
             <img src="src/imagens/ana-karoline-tech.github.io_food-landingPage_.png" target="_blank" alt="Nome do projeto" />
             <h3>Food</h3>
             <div class="informacoes-projeto">
@@ -234,7 +251,7 @@
 
       <div class="container-giphy">
         <div class="projeto">
-          <a href="https://giphy.com/" target="_blank">
+          <a href="https://github.com/Ana-Karoline-Tech/To-Do-List-React" target="_blank">
             <img src="src/imagens/giphy/animacao-to-do-list.gif" alt="Nome do projeto" />
             <h6>Giphy</h6>
             <div class="informacoes-projeto">
@@ -271,6 +288,8 @@
       </div>
     </div>
   </footer>
+  <script src="./src/js/apresentacao.js"></script>
+  <script src="./src/js/hamburguer.js"></script>
   <script src="./src/js/script.js"></script>
 </body>
 
