@@ -15,6 +15,173 @@
     border-radius: 5px;
 }
 
+
+        .btn-cv {
+            margin-top: 30px;
+        }
+
+
+
+        .sobre-mim-section {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        .profile-photo {
+            flex: 0 0 300px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ff006e;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .code-editor {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.1);
+            overflow: hidden;
+        }
+
+        .editor-header {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 0.8rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .editor-dots {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .dot.red { background: #ff5f56; }
+        .dot.yellow { background: #ffbd2e; }
+        .dot.green { background: #27ca3f; }
+
+        .file-name {
+            color: #00d4ff;
+            font-family: 'Courier New', monospace;
+            font-size: 1.9rem;
+            margin-left: 1rem;
+        }
+
+        .editor-content {
+            padding: 1.5rem;
+            font-family: 'Courier New', monospace;
+            font-size: 1.4rem;
+            line-height: 1.8;
+            min-height: 350px;
+        }
+
+        .line {
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
+
+        .line-number {
+            color: #666;
+            width: 40px;
+            text-align: right;
+            padding-right: 1rem;
+            user-select: none;
+        }
+
+        .line-content {
+            flex: 1;
+        }
+
+        /* Syntax Highlighting */
+        .comment { color: #6a9955; }
+        .keyword { color: #569cd6; }
+        .string { color: #ce9178; }
+        .property { color: #9cdcfe; }
+        .value { color: #b5cea8; }
+        .operator { color: #d4d4d4; }
+        .bracket { color: #ffd700; }
+
+        /* Cursor Effect */
+        .typing-cursor::after {
+            content: '|';
+            color: #00d4ff;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Console Section */
+        .console-section {
+            margin-top: 2rem;
+            background: rgba(0, 20, 40, 0.6);
+            border-left: 4px solid #00d4ff;
+            border-radius: 0 8px 8px 0;
+            padding: 1.5rem;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .console-header {
+            color: #00d4ff;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-size: 2.1rem;
+        }
+
+        .console-output {
+            line-height: 2.0;
+            color: #b0b0b0;
+            font-size: 1.8rem;
+        }
+
+        .console-output p {
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #00d4ff;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sobre-mim-section {
+                flex-direction: column;
+            }
+            
+            .profile-photo {
+                flex: none;
+                height: 250px;
+            }
+            
+            .editor-content {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+
+
+
 .sobre-mim .informacoes-sobre-mim {    
     max-width: 60%;
     padding: 0 25px;   
