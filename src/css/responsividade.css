@@ -1,0 +1,37 @@
+/* Mobile first */
+@media (max-width: 1280px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Imagem primeiro */
+  .img-home {
+    order: 1;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .img-box {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  /* Descrição depois */
+  .home-content {
+    order: 2;
+    width: 95%;
+  }
+  
+  .terminal {
+    width: 100%;
+    font-size: 0.85rem; /* ajuste o tamanho do texto se necessário */
+  }
+  
+  .redes-sociais {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+}
