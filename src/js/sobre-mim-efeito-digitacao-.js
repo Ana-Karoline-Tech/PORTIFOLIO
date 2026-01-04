@@ -36,36 +36,7 @@
                     return;
                 }
 
-                // Digitar próximo caractere
-                const currentText = originalContent.substring(0, currentChar + 1);
-                line.innerHTML = currentText;
-                line.appendChild(cursor);
-                
-                currentChar++;
-                
-                // Velocidade variável baseada no tipo de caractere
-                let speed = 30;
-                const char = originalContent[currentChar - 1];
-                if (char === ' ') speed = 10;
-                if (char === '\n') speed = 100;
-                if (originalContent.includes('comment') || originalContent.includes('Comment')) speed = 20;
-                
-                setTimeout(typeNextChar, speed);
-            }
-
-            // Iniciar na primeira linha
-            if (lines.length > 0) {
-                lines[0].appendChild(cursor);
-                setTimeout(typeNextChar, 500);
-            }
-        }
-
-        // Iniciar efeito quando página carregar
-        window.addEventListener('load', () => {
-            setTimeout(typeWriter, 1000);
-        });
-
-        // Reiniciar efeito ao clicar no editor
-        document.querySelector('.code-editor').addEventListener('click', () => {
-            location.reload();
-        });
+                // Arquivo legado: `sobre-mim-efeito-digitacao-.js`
+                // Este arquivo foi renomeado para `sobre-mim-efeito-digitacao.js`.
+                // Mantenho este stub para compatibilidade local; por favor, use a versão renomeada.
+                console.warn('Arquivo sobrescrito: usar src/js/sobre-mim-efeito-digitacao.js');

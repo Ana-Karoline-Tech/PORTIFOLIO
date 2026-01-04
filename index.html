@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Ana Karoline Ribeiro — Desenvolvedora Frontend e Full Stack em evolução." />
   <title>Ana Karoline Ribeiro - Desenvolvedora Frontend</title>
 
-  <link rel="stylesheet" href="src/css/font-awesome.css" />
-  <link rel="stylesheet" href="src/css/reset.css" />
-  <link rel="stylesheet" href="src/css/responsividade.css" />
-  
-  <!-- Global -->
-  <link rel="stylesheet" href="src/css/globais.css" />
-  <link rel="stylesheet" href="src/css/secoes/navbar.css" />
+  <!-- Variáveis e reset primeiro -->
   <link rel="stylesheet" href="src/css/variaveis.css" />
+  <link rel="stylesheet" href="src/css/reset.css" />
+
+  <!-- Fonts e estilos globais -->
+  <link rel="stylesheet" href="src/css/globais.css" />
+
+  <!-- Icones: usar arquivo local para garantir que as fonts estejam disponíveis -->
+  <link rel="stylesheet" href="src/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+  <!-- Seções -->
+  <link rel="stylesheet" href="src/css/secoes/navbar.css" />
   <link rel="stylesheet" href="src/css/secoes/header.css" />
   <link rel="stylesheet" href="src/css/secoes/apresentacao.css" />
   <link rel="stylesheet" href="src/css/secoes/home.css" />
@@ -23,15 +29,21 @@
   <link rel="stylesheet" href="src/css/secoes/projetos.css" />
   <link rel="stylesheet" href="src/css/secoes/footer.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+  <!-- Responsividade por último para sobrepor regras quando necessário -->
+  <link rel="stylesheet" href="src/css/responsividade.css" />
+
   <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <header class="header">
     <nav class="cyberpunk-navbar">
-  <div class="navbar-logo">AK <span>- Desenvolvedora Web</span></div>
-  <div class="navbar-links">
+    <div class="navbar-logo">AK <span>- Desenvolvedora Web</span></div>
+    <!-- Botão de menu para mobile -->
+    <button class="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="navbar-links">
+      <span class="hamburger-bars"></span>
+    </button>
+    <div class="navbar-links" id="navbar-links">
     <a href="#sobre-mim" class="navbar-link">Sobre Mim</a>
     <a href="#habilidades" class="navbar-link">Habilidades</a>
     <a href="#projetos" class="navbar-link">Meus Projetos</a>
@@ -458,7 +470,7 @@
   </footer>
   <script src="./src/js/apresentacao.js"></script>
   <script src="./src/js/hamburguer.js"></script>
-  <script src="./src/js/sobre-mim-efeito-digitacao-.js"></script>
+  <script src="./src/js/sobre-mim-efeito-digitacao.js"></script>
   <script src="./src/js/script.js"></script>
 </body>
 
