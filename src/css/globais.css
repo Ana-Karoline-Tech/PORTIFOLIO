@@ -45,6 +45,7 @@ html {
     background-color: var(--cor-fundo-cinza-escuro);
     font-family: var(--fonte-primaria);
     font-size: var(--fonte-normal);
+    padding-top: var(--nav-height);
   }
 
   .container {

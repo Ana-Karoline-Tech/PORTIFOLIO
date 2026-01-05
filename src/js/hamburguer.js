@@ -1,11 +1,23 @@
 // Script simples para controlar menu hamburguer caso exista na página
 document.addEventListener('DOMContentLoaded', () => {
 	const menuButton = document.querySelector('.menu');
-	const nav = document.querySelector('header nav');
+	// Seleciona o nav pelo seletor principal; mantém fallback para "header nav"
+	const nav = document.querySelector('.cyberpunk-navbar') || document.querySelector('header nav');
+
+	// Debounce/lock para evitar múltiplos cliques rápidos durante animação
+	let isAnimating = false;
+	const ANIM_DURATION = 300; // ms (ajuste conforme animação CSS)
 
 	if (menuButton && nav) {
+		// estado inicial de acessibilidade
+		menuButton.setAttribute('aria-expanded', 'false');
+
 		menuButton.addEventListener('click', () => {
-			nav.classList.toggle('menu-open');
+			if (isAnimating) return;
+			isAnimating = true;
+			const opened = nav.classList.toggle('menu-open');
+			menuButton.setAttribute('aria-expanded', opened ? 'true' : 'false');
+			setTimeout(() => { isAnimating = false; }, ANIM_DURATION);
 		});
 	}
 
@@ -16,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			// fecha menu mobile se estiver aberto
 			if (nav && nav.classList.contains('menu-open')) {
 				nav.classList.remove('menu-open');
+				if (menuButton) menuButton.setAttribute('aria-expanded', 'false');
 			}
 		});
 	});
